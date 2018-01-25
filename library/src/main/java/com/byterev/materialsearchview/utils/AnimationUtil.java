@@ -1,4 +1,4 @@
-package com.miguelcatalan.materialsearchview.utils;
+package com.byterev.materialsearchview.utils;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;

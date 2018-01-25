@@ -1,4 +1,4 @@
-package com.miguelcatalan.materialsearchview;
+package com.byterev.materialsearchview;
 
 import android.app.Activity;
 import android.content.Context;
@@ -34,7 +34,7 @@ import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.miguelcatalan.materialsearchview.utils.AnimationUtil;
+import com.byterev.materialsearchview.utils.AnimationUtil;
 
 import java.lang.reflect.Field;
 import java.util.List;

@@ -1,44 +1,34 @@
-package com.miguelcatalan.materialsearchview.sample;
+package com.byterev.materialsearchview.sample;
 
 import android.content.Intent;
-import android.os.Bundle;
 import android.speech.RecognizerIntent;
 import android.support.design.widget.Snackbar;
-import android.support.design.widget.TabLayout;
-import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.text.TextUtils;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.miguelcatalan.materialsearchview.MaterialSearchView;
+import com.byterev.materialsearchview.MaterialSearchView;
 
 import java.util.ArrayList;
 
-public class TabActivity extends AppCompatActivity {
+public class ColoredActivity extends AppCompatActivity {
 
     private MaterialSearchView searchView;
-    private ViewPager viewPager;
-    private TabLayout tabLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_appbarlayout);
+        setContentView(R.layout.activity_colored);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        viewPager = (ViewPager) findViewById(R.id.viewpager);
-        setupViewPager(viewPager);
-
-        tabLayout = (TabLayout) findViewById(R.id.tabs);
-        tabLayout.setupWithViewPager(viewPager);
-
         searchView = (MaterialSearchView) findViewById(R.id.search_view);
         searchView.setVoiceSearch(false);
-        searchView.setCursorDrawable(R.drawable.custom_cursor);
+        searchView.setCursorDrawable(R.drawable.color_cursor_white);
         searchView.setSuggestions(getResources().getStringArray(R.array.query_suggestions));
         searchView.setOnQueryTextListener(new MaterialSearchView.OnQueryTextListener() {
             @Override
@@ -66,13 +56,6 @@ public class TabActivity extends AppCompatActivity {
                 //Do some magic
             }
         });
-    }
-
-    private void setupViewPager(ViewPager viewPager) {
-        ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
-        adapter.addFragment(new DummyFragment(), "ONE");
-        adapter.addFragment(new DummyFragment(), "TWO");
-        viewPager.setAdapter(adapter);
     }
 
     @Override

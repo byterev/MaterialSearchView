@@ -1,4 +1,4 @@
-package com.miguelcatalan.materialsearchview.sample;
+package com.byterev.materialsearchview.sample;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;

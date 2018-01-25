@@ -1,27 +1,25 @@
-package com.miguelcatalan.materialsearchview.sample;
+package com.byterev.materialsearchview.sample;
 
 import android.content.Intent;
+import android.os.Bundle;
 import android.speech.RecognizerIntent;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.text.TextUtils;
 import android.view.Menu;
 import android.view.MenuItem;
-
-import com.miguelcatalan.materialsearchview.MaterialSearchView;
-
+import com.byterev.materialsearchview.MaterialSearchView;
 import java.util.ArrayList;
 
-public class DefaultActivity extends AppCompatActivity {
+public class InputTypeActivity extends AppCompatActivity {
 
     private MaterialSearchView searchView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_default);
+        setContentView(R.layout.activity_input_type);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);

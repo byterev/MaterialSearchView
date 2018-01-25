@@ -1,4 +1,4 @@
-package com.miguelcatalan.materialsearchview.sample;
+package com.byterev.materialsearchview.sample;
 
 import android.content.Intent;
 import android.speech.RecognizerIntent;
@@ -10,7 +10,7 @@ import android.text.TextUtils;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.miguelcatalan.materialsearchview.MaterialSearchView;
+import com.byterev.materialsearchview.MaterialSearchView;
 
 import java.util.ArrayList;
 

@@ -1,4 +1,4 @@
-package com.miguelcatalan.materialsearchview.sample;
+package com.byterev.materialsearchview.sample;
 
 import android.content.Intent;
 import android.os.Bundle;

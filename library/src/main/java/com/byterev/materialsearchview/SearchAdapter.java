@@ -1,4 +1,4 @@
-package com.miguelcatalan.materialsearchview;
+package com.byterev.materialsearchview;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
