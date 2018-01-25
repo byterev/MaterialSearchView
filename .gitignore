@@ -21,9 +21,11 @@ gen-external-apklibs
 #gradle
 .gradle
 local.properties
-gradlew
-gradlew.bat
-gradle/
+### This should go to git in order to clone the project and run as fast as possible
+#gradlew
+#gradlew.bat
+#gradle/
+###
 build/
 
 #vi
