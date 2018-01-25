@@ -54,7 +54,7 @@ public class MaterialSearchView extends FrameLayout implements Filter.FilterList
     private View mSearchLayout;
     private View mTintView;
     private ListView mSuggestionsListView;
-    private EditText mSearchSrcTextView;
+    public EditText mSearchSrcTextView;
     private ImageButton mBackBtn;
     private ImageButton mVoiceBtn;
     private ImageButton mEmptyBtn;
