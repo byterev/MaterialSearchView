@@ -18,7 +18,7 @@ android {
         minSdkVersion 14
         targetSdkVersion 27
         versionCode 1
-        versionName "1.4.0"
+        versionName "1.5.0"
     }
     buildTypes {
         release {
@@ -35,10 +35,11 @@ dependencies {
 }
 
 publish {
-    userOrg = 'miguelcatalan'
-    groupId = 'com.miguelcatalan'
+    userOrg = 'byterev'
+    groupId = 'com.byterev'
     artifactId = 'materialsearchview'
-    publishVersion = '1.4.0'
+    repoName = 'materialsearchview'
+    publishVersion = '1.5.0'
     desc = 'Cute library to implement SearchView in a Material Design Approach'
-    website = 'https://github.com/MiguelCatalan/MaterialSearchView'
+    website = 'https://github.com/byterev/materialsearchview'
 }
