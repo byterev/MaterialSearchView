@@ -430,6 +430,14 @@ public class MaterialSearchView extends FrameLayout implements Filter.FilterList
     }
 
     /**
+     * Clear suggestions from SearchView
+     */
+    public void clearSuggestions() {
+        setAdapter(null);
+        mTintView.setVisibility(GONE);
+    }
+
+    /**
      * Dismiss the suggestions list.
      */
     public void dismissSuggestions() {
@@ -437,7 +445,6 @@ public class MaterialSearchView extends FrameLayout implements Filter.FilterList
             mSuggestionsListView.setVisibility(GONE);
         }
     }
-
 
     /**
      * Calling this will set the query to search text box. if submit is true, it'll submit the query.
