@@ -176,7 +176,9 @@ public class MaterialSearchView extends FrameLayout implements Filter.FilterList
         mSearchSrcTextView.setOnEditorActionListener(new TextView.OnEditorActionListener() {
             @Override
             public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
-                onSubmitQuery();
+                if (event.getAction() == KeyEvent.ACTION_UP) {
+                    onSubmitQuery();
+                }
                 return true;
             }
         });
