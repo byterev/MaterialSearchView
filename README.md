@@ -16,7 +16,7 @@ http://www.materialdoc.com/search-filter/
 **Add the dependencies to your gradle file:**
 ```javascript
 dependencies {
-    compile 'com.byterev:materialsearchview:1.6.1'
+    compile 'com.byterev:materialsearchview:1.6.2'
 }
 ```
 **Add MaterialSearchView to your layout file along with the Toolbar** *(Add this block at the bottom of your layout, in order to display it over the rest of the view)*:
